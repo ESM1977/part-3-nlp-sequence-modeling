@@ -1,0 +1,103 @@
+Requirements for Execution of the Project
+
+Requirements for Execution of the Project
+
+1. Software Requirements
+
+Jupyter Notebook / Google Colab / VS Code
+CSV dataset file
+
+2. Dataset Requirement
+customer_support_text_classification.csv
+
+3. Libraries Required
+import pandas as pd
+import matplotlib.pyplot as plt
+
+import re
+import nltk
+
+from nltk.corpus import stopwords
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
+
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+from sklearn.linear_model import LogisticRegression
+
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+import tensorflow as tf
+
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Embedding, LSTM, Dense, Dropout
+
+4. Task 1: Dataset Understanding
+Requirements:
+	•	Load the text dataset.
+	•	Check number of records.
+	•	Identify target labels/classes.
+	•	Display sample text records.
+	•	Calculate average text length.
+	•	Check class distribution.
+
+Task 2: Text Preprocessing
+Requirements:
+	•	Convert text to lowercase.
+	•	Remove unnecessary symbols and special characters.
+	•	Tokenize the text.
+	•	Remove stopwords, if required.
+	•	Prepare text for model input.
+	•	Apply padding or truncation if using sequence models.
+
+Task 3: Text Vectorization
+Requirements:
+	•	Convert text into numerical format.
+	•	Use at least one method:
+	◦	Bag of Words
+	◦	TF-IDF
+	◦	Word embeddings
+	◦	Tokenizer-based sequences
+	•	Explain why text must be converted into vectors before model training.
+
+Task 4: Baseline Model
+Requirements:
+	•	Build a simple baseline model.
+	•	Recommended approach:
+	◦	Logistic Regression with TF-IDF
+	•	Split data into training and testing sets.
+	•	Train the model.
+	•	Evaluate the model using:
+	◦	Accuracy
+	◦	Precision
+	◦	Recall
+	◦	F1-score
+	◦	Confusion matrix
+
+Task 5: Sequence Model or Conceptual Architecture
+Requirements:
+	•	Build or explain a simple sequence model using:
+	◦	RNN / LSTM / GRU
+	•	Include:
+	◦	Input sequence
+	◦	Embedding layer
+	◦	Recurrent or sequence layer
+	◦	Output layer
+	◦	Loss function
+	◦	Evaluation metric
+	•	If full training is not feasible, provide a clear architecture explanation.
+
+Task 6: Attention and Transformer Reflection
+Requirements:
+	•	Explain why RNNs struggle with long-term dependencies.
+	•	Explain how LSTMs help with memory.
+	•	Explain what attention solves in sequence-to-sequence tasks.
+	•	Explain why transformers are important in modern NLP and Generative AI.
