@@ -1,0 +1,8 @@
+Metric,Score
+Accuracy,1
+Precision_macro,1
+Recall_macro,1
+F1_score_macro,1
+Precision_weighted,1
+Recall_weighted,1
+F1_score_weighted,1
