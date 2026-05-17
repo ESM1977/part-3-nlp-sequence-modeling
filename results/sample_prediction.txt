@@ -1,0 +1,14 @@
+Sample Predictions on Test Data
+========================================
+
+Sample 1
+--------------------
+Text Message: My refund is still pending and this experience is frustrating.
+Actual Label: negative
+Predicted Label: negative
+
+Sample 2
+--------------------
+Text Message: I need information about the payment process.
+Actual Label: neutral
+Predicted Label: neutral
